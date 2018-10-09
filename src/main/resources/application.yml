@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+## mybatis-plus 信息配置
+mybatis-plus:
+  check-config-location: true
+  mapper-locations: classpath*:/mapper/**/*.xml
+  typeAliasesPackage: com.lin.learn.survivor.common.entity
+  global-config:
+    id-type: 1
+    field-strategy: 2
+    #刷新mapper 调试神器
+    refresh-mapper: true
